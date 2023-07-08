@@ -27,3 +27,22 @@ int main() {
         row++;
     }
 }
+
+// # Alternate method without using the count variable:
+
+// int main() {
+//     int n;
+//     cout << "enter no. of rows: ";
+//     cin >> n;
+//     int row = 1;
+    
+//     while (row<=n) {
+//         int col = 1;
+//         while (col<=row) {
+//             cout << row + col - 1 << " ";
+//             col++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+// }
