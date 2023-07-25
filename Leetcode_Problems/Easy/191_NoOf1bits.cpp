@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+
+
+/* 
+The following code works on leetcode but some for reason here the input we give in binary form is taken as integer and hence the answer comes to be wrong here. I will look into the issue sometime in the future.
+*/
+
 int hammingWeight(uint32_t n) {
     int count = 0;
     while (n)
