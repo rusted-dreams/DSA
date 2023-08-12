@@ -8,9 +8,11 @@ int main() {
     cout << "Enter the no.: ";
     cin >> n;
     int bn = 0;
+    int multiplier = 1;
     while(n) {
-        bn = bn*10 + (n&1);
+        bn = bn + (n&1)*multiplier;
         n = n >> 1;
+        multiplier *= 10;
     }
     cout << n << " in binary is " << bn;
 }
