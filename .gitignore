@@ -1,3 +1,4 @@
 # ignores all compiled files.
 *.exe
 test.cpp
+build/
