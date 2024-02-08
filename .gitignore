@@ -1,4 +1,5 @@
 # ignores all compiled files.
 *.exe
 test.cpp
+build/*
 !build/.gitkeep
