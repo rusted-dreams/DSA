@@ -1,0 +1,2 @@
+- 7. reverse integer - https://leetcode.com/problems/reverse-integer/description/
+- 1009. complement of base 10 nos. - https://leetcode.com/problems/complement-of-base-10-integer/description/

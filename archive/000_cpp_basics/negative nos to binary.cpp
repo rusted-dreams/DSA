@@ -15,6 +15,6 @@ int main() {
         }
         n = n>>1;
     }
-    cout << binary;
+    cout << binary << endl;
     
 }

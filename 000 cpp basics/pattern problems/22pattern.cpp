@@ -41,9 +41,9 @@ int main() {
     cin >> n;
 
     int i = 0;
-    while (i<=2*n-2) {
+    while (i<2*n-1) {
         int j = 0;
-        while (j<=2*n-2) {
+        while (j<2*n-1) {
             int top = i;
             int bottom = 2*n-2-i;
             int left = j;
