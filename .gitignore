@@ -3,5 +3,3 @@
 test.cpp
 build/*
 !build/.gitkeep
-input.txt
-output.txt
