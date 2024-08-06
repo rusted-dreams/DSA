@@ -43,13 +43,13 @@ Sample Output 2:
 2
 7
 
-
 Hints:
 1. Simply calculate the frequency of each value.
 2. Try to optimise the above approach by using an array to store the frequencies.
 3. Think of a solution using Floyd’s cycle finding algorithm.
 4. Try to think of a solution based on bitwise XOR.
 */
+
 
 #include <bits/stdc++.h>
 using namespace std;

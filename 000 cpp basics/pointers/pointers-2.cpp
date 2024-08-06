@@ -31,7 +31,7 @@ int main()
     char ch[5] = "abcd";
     char ch2[5] = {'a', 'b', 'c', 'd'};
 
-    cout << in<< endl;   // implementation of cout fun is different for int arr and char arr.
+    cout << in<< endl;   // implementation of cout fun. is different for int arr and char arr.
     cout << ch << endl;  // should get address of first ch block but getting value of ch.
 
 
