@@ -33,4 +33,10 @@ int main() {
         cout << endl;
     }
 
+    // deleting/releasing the array from memory:
+    for (int i=0; i<m; i++) {
+        delete []arr2D[i];
+    }
+    delete []arr2D;
+
 }
