@@ -9,7 +9,11 @@ using namespace std;
 struct Node {
     int data;
     Node* next;
-    Node(int data, Node* next=nullptr){
+    Node(int data){
+        this -> data = data;
+        this -> next = NULL;
+    }
+    Node(int data, Node* &next){
         this -> data = data;
         this -> next = next;
     }
@@ -94,7 +98,6 @@ Node* deleteValue(Node* &head, int key) {
         free(temp);
         return head;
     }
-    int count = 0;
     while(temp != NULL) {
         if(temp -> data == key) {
             prev->next = prev->next->next;
@@ -211,7 +214,7 @@ int main() {
     linkList = insertBeforeX(linkList, 40, 35);
     printLinkList(linkList);
 
-    cout << endl << "# deleting in linked list: " << endl << endl;
+    cout << endl << " # DELETION IN LINKED LIST: " << endl << endl;
 
     deleteTail(linkList);
     cout << "deleting tail which is 70: ";
