@@ -9,7 +9,7 @@ because to insert to front in vector you need to perform insert() operation
 which is very costly and list provides push_front(), emplace_front() out of the box.
 
 - vector implements singly linked list.
-- list implements doublu linked list.
+- list implements doubly linked list.
 */
 
 void explainList() {
