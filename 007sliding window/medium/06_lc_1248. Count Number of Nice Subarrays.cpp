@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// almost same as problem 06:
+// almost same as problem 05:
 int helper(vector<int>& nums, int k) {
     if (k < 0) return 0;
     int l = 0, r = 0, oddCount = 0, cnt = 0;
