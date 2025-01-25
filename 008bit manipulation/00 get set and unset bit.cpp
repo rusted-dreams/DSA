@@ -4,6 +4,9 @@ using namespace std;
 int getBit(int num , int i) {
     // suppose you want 5th bit (0 indexed). then we take the bit wise and of the no. and (1 left shifted 5 times), if this no. is != 0 then it is a set bit.
     int bit = (num & (1<<i))!=0 ? 1:0;
+
+    //alternate method:
+    int bitAlternateMethod = (num>>i) & 1?1:0;
     return bit; 
 }
 
