@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
-
 using namespace std;
+
+// implement stack using arrays:
 class Stack {
     int size;
     int* arr;
@@ -27,6 +28,8 @@ public:
         return top + 1;
     }
 };
+
+
 int main() {
 
     Stack s;
