@@ -5,9 +5,7 @@
 using namespace std;
 
 class Solution {
-    // vector<int> res(n);
     void doDfs(vector<vector<int>>& adj, vector<int>& vis, vector<int>& res, int node) {
-        if (vis[node]) return;
         res.push_back(node);
         vis[node] = 1;
         for (int it : adj[node]) {

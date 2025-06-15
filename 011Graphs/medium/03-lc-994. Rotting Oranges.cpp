@@ -9,7 +9,7 @@ public:
     int orangesRotting(vector<vector<int>>& grid) {
         int n = grid.size();
         int m = grid[0].size();
-        int fresh = 0; // count of fresh oranges
+        int fresh = 0; // time of fresh oranges
 
         vector<vector<int>> vis(n, vector<int>(m, 0)); // visited grid to track processed cells
         queue<pair<int, int>> q; // BFS queue to store rotten oranges
@@ -27,12 +27,12 @@ public:
 
         if (!fresh) return 0; // all rotten already
 
-        int count = 0; // time counter
+        int time = 0; // time counter
 
         // Step 2: BFS to rot adjacent fresh oranges level-by-level
-        while (!q.empty()) {
+        while (!q.empty() && fresh) {
             int num = q.size(); // number of rotten oranges to process this minute
-            count++; // increment time (minute passed)
+            time++; // increment time (minute passed)
 
             for (int i = 0; i < num; i++) {
                 int row = q.front().first;
@@ -57,14 +57,11 @@ public:
                         q.push({ nrow, ncol }); // add to queue for next round
                     }
                 }
-
-                // if all fresh oranges are rotten, return time taken
-                if (fresh == 0) return count;
             }
         }
 
         // if fresh oranges remain unrotted
-        return fresh ? -1 : count;
+        return fresh ? -1 : time;
     }
 };
 
