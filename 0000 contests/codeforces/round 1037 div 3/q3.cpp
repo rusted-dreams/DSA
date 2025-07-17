@@ -1,5 +1,5 @@
-// problem - 
-// link - 
+// problem - C. I Will Definitely Make It
+// link - https://codeforces.com/contest/2126/problem/C
 
 #include <bits/stdc++.h>
 using namespace std;

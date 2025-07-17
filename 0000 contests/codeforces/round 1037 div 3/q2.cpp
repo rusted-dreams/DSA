@@ -1,5 +1,5 @@
-// problem - 
-// link - 
+// problem - B. No Casino in the Mountains
+// link - https://codeforces.com/contest/2126/problem/B
 
 #include <bits/stdc++.h>
 using namespace std;

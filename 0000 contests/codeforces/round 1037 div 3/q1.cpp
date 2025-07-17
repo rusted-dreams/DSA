@@ -1,5 +1,5 @@
-// problem - 
-// link - 
+// problem - A. Only One Digit
+// link - https://codeforces.com/contest/2126/problem/A
 
 #include <bits/stdc++.h>
 using namespace std;
