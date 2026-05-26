@@ -7,6 +7,8 @@ using namespace std;
 class Solution {
     // dijkstra's algo will give the min dist.
     // we will keep a parent array to form the path later.
+    // TC - O(E log V) + O(V) for forming the path.
+    // hence can be solved using dijkstra's algo and parent tracking.
 public:
     vector<int> shortestPath(int n, int m, vector<vector<int>>& edges) {
         vector<vector<pair<int, int>>> adj(n+1);
@@ -39,6 +41,7 @@ public:
                 }
             }
         }
+        // lets form the path now.
         if(parent[n] == -1) return {-1};
         vector<int> ans;
         int node = n;
@@ -46,8 +49,8 @@ public:
             ans.push_back(node);
             node=parent[node];
         }
-        ans.push_back(1);
-        ans.push_back(dist[n]);
+        ans.push_back(1); // start node
+        ans.push_back(dist[n]); // total distance
         reverse(ans.begin(), ans.end());
         return ans;
     }
